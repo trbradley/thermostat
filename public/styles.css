@@ -1,0 +1,44 @@
+.low-usage {
+  color: green;
+  background-image: url('https://avatars2.githubusercontent.com/u/13475227?v=3&s=400');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.medium-usage {
+  color: orange;
+}
+
+.high-usage {
+  color: red;
+  font-size: 40px;
+  background-image: url('https://avatars2.githubusercontent.com/u/15013240?v=3&s=400');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  height: 5em;
+  width: 5em;
+  border-radius: 30%;
+  border-style: none;
+  font-size: 15px;
+}
+
+#thermostat {
+  margin: auto;
+  max-width: 30%;
+  padding: 10px;
+  border: 20px solid;
+  text-align: center;
+}
+
+body {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  align-text: center;
+  background-color: aliceblue;
+}

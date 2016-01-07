@@ -2,25 +2,22 @@
 <html>
 <head>
   <title>Thermostat Simulation</title>
-  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="public/styles.css">
 </head>
 <body>
-  <section>
+  <section id=thermostat>
+    <h1>The Thermostat!</h1>
     <h1 id="temperature"></h1>
     <p>
       <button id='temp_up'>/\</button><br>
       <button id='temp_down'>\/</button><br><br>
-      <button id='reset'>Reset</button><br>
-      <button id='power_save'>Power Save</button><br>
+      <button id='reset'>Reset</button><br><br>
+      <button id='power_save'>Power Save</button><br><br>
+      Power saving mode is <span id="PSM_status"></span>
     </p>
   </section>
-    <div id='temp'>
-        This is where you'd show the temperature
-    </div>
-    <div id='colour'>
-        This is where you show the power usage colour
-    </div>
-      power saving mode is <span id="PSM_status">on</span>
-    <script src="src/Thermostat.js"></script>
+  <script src="src/thermostat.js"></script>
+  <script src="jquery-2.1.4.js"></script>
+  <script src="interface.js"></script>
 </body>
 </html>
