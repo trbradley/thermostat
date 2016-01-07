@@ -40,4 +40,12 @@ $(document).ready(function() {
     });
   }
 
+  $("#city_select").submit(function(event){
+    event.preventDefault();
+    var city = $("#current_city").val();
+    $.get("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=5d24feaa9b01c3e76763d1de227881dd", function(data){
+      $('#currentweather').text(data.main.temp);
+    });
+  });
+
 });
