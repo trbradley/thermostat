@@ -46,7 +46,7 @@ Thermostat.prototype._minTemp = function() {
 };
 
 Thermostat.prototype._maxTemp = function() {
-  if (this.power_save) {return this.temperature >= this.PSM_MAX}
+  if (this.power_save) {return this.temperature >= this.PSM_MAX;}
   return this.temperature >= this.PSM_OFF_MAX;
 };
 
