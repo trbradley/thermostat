@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('#PSM_status').text('on');
   $('#thermostat').hide().fadeIn('slow');
 
-  $('#temp_up').on('click', function() {
+  $('#temp_up').click(function() {
     thermostat.up();
     updateTemperature();
   });
@@ -28,6 +28,10 @@ $(document).ready(function() {
     } else {
       $('#PSM_status').text('off');
     }
+  });
+
+  $('button').hover(function () {
+    $(this).css("opacity", 0.6);
   });
 
   function updateTemperature() {
