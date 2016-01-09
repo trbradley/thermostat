@@ -3,25 +3,34 @@
 <head>
   <title>Thermostat Simulation</title>
   <link rel="stylesheet" type="text/css" href="public/styles.css">
+  <link rel="img" type="image" href="images/sky.jpg">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,100' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <section id=thermostat>
-    <h1>The Thermostat!</h1>
-    <h1 id="temperature"></h1>
-    <p>
-      <button id='temp_up'>/\</button><br>
-      <button id='temp_down'>\/</button><br><br>
-      <button id='reset'>Reset</button><br><br>
-      <button id='power_save'>Power Save</button><br><br>
-      Power saving mode is <span id="PSM_status"></span>
-    </p>
-    <section>
-      <p> Current temperature is <span id="currentweather"></span> </p>
+  <section id="thermostat">
+    <div id="therm">
+      <h1 id="thermtitle">Thermostat Control:</h1>
+      <h1 id="temperature"></h1>
+      <p id="buttons">
+        <button id='temp_up'>/\</button><br><br>
+        <button id='temp_down'>\/</button><br><br>
+        <button id='reset'>Reset</button>
+        <button id='power_save'>Power Save</button>
+        <br><br>
+        <p id=powersavestatus>
+          Power saving mode is <span id="PSM_status"></span>
+        </p>
+      </p>
+    </div>
+    <div id="weather">
+      <h1><span id="current-weather"></span><br><br>
+        The temperature there is <span id="current-temp"></span><br>
+        degrees centrigrade.</h1>
       <form id="city_select">
         <input id="current_city" type="text" placeholder="Choose your city"></input>
         <input type="submit"></input>
       </form>
-    </section>
+    </div>
   </section>
   <script src="src/thermostat.js"></script>
   <script src="jquery-2.1.4.js"></script>

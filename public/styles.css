@@ -1,48 +1,69 @@
-.low-usage {
-  color: green;
-  background-image: url('https://avatars2.githubusercontent.com/u/13475227?v=3&s=400');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          font-family: 'Roboto', sans-serif;
+          /*height: 100%;
+          margin: 0;
+          padding: 0;*/
 }
 
-.medium-usage {
-  color: orange;
-  background-image: url('https://avatars0.githubusercontent.com/u/13649866?v=3&s=400');
+body {
+  /*font-family: 'Roboto', sans-serif;*/
+  /*background-color: aliceblue;*/
+  background-image: url(http://orig05.deviantart.net/0d6e/f/2013/044/7/c/sky_by_zim2687-d5us8g0.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-    background-size: cover;
+  background-size: cover;
+  margin: 0 auto;
 }
 
-.high-usage {
-  color: red;
-  font-size: 40px;
-  background-image: url('https://avatars2.githubusercontent.com/u/15013240?v=3&s=400');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+#thermostat {
+  background-color: #ffffff;
+  opacity: 0.6;
+  width: 100%;
+  height: 35em;
+}
+
+#therm {
+  display: inline-block;
+  width: 400px;
+  margin: 5em;
+  text-align: center;
+}
+
+#weather {
+  display: inline-block;
+  width: 400px;
+  margin: 5em;
+  vertical-align: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 button {
+  background-color: lightgrey;
   height: 5em;
   width: 5em;
   border-radius: 30%;
   border-style: none;
-  font-size: 15px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
 }
 
-#thermostat {
-  margin: auto;
-  max-width: 30%;
-  padding: 10px;
-  border: 20px solid;
-  text-align: center;
+#powersavestatus {
+  font-style: italic;
 }
 
-body {
-  margin: auto;
-  width: 60%;
-  padding: 10px;
-  text-align: center;
-  background-color: aliceblue;
+.low-usage {
+  color: green;
+}
+
+.medium-usage {
+  color: orange;
+}
+
+.high-usage {
+  color: red;
 }
